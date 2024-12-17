@@ -1,0 +1,32 @@
+// VARIABLES.SCSS
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$font: (
+  manrope: "Manrope",
+);
+
+$font-weights: (
+  manrope: (
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+  ),
+);
+
+// colors
+$colors: (
+  primary: (
+    cyan: hsl(179, 80%, 58%),
+    leging-blue: hsl(206, 84%, 22%),
+    tomato-red: hsl(343, 100%, 58%),
+  ),
+  neutral: (
+    white: hsl(0, 0%, 100%),
+    grayish-blue: hsl(225, 14%, 53%),
+    dark-navy-blue: hsl(230, 60%, 8%),
+  ),
+);

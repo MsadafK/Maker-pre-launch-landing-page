@@ -1,0 +1,131 @@
+// MAIN.SCSS
+
+.main {
+  color: white;
+  margin: 4rem 0;
+
+  &__grid-images-section {
+    margin: 1rem 0 4rem;
+    &__grid-images-container {
+      &__grid-image-container {
+        margin: 1.5rem 0;
+        padding: 1rem 2rem;
+        text-align: center;
+        img {
+          display: inline;
+        }
+        &__title-and-description {
+          &__title {
+            font-size: 1.2rem;
+            margin: 0.65rem 0;
+          }
+          &__description {
+            font-size: 0.75rem;
+            color: map-get($colors, neutral, grayish-blue);
+          }
+        }
+      }
+    }
+  }
+
+  // pricing cards section
+  &__pricing-plans-section {
+    &__title-and-description {
+      padding: 1rem;
+      text-align: center;
+      &__title {
+        font-size: 1.4rem;
+      }
+      &__description {
+        font-size: 0.8rem;
+        color: map-get($colors, neutral, grayish-blue);
+      }
+    }
+
+    &__pricing-card {
+      position: relative;
+      border-radius: 5px;
+      padding: 2rem 1rem;
+      margin: 4rem 1rem;
+      &__image {
+        position: absolute;
+        top: -1.5rem;
+        left: 1rem;
+      }
+
+      &__title-and-description {
+        &__title {
+          font-size: 1.2rem;
+        }
+        &__description {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          color: map-get($colors, neutral, grayish-blue);
+          margin: 0.5rem 0;
+        }
+      }
+
+      &__price {
+        font-size: 2rem;
+        color: map-get($colors, neutral, white);
+        font-weight: map-get($font-weights, manrope, bold);
+        margin: 1rem 0;
+      }
+
+      &__subscription-features {
+        &__feature {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          margin: 0.5rem 0;
+
+          &__description {
+            font-size: 0.9rem;
+            color: map-get($colors, neutral, white);
+          }
+        }
+      }
+    }
+
+    .free-card {
+      background-color: map-get($colors, primary, leging-blue);
+    }
+
+    .paid-card {
+      background-color: map-get($colors, primary, cyan);
+
+      &__image {
+        top: -2rem;
+      }
+      .main__pricing-plans-section__pricing-card__title-and-description {
+        &__title {
+          color: map-get($colors, neutral, dark-navy-blue);
+        }
+        &__description {
+          color: map-get($colors, primary, leging-blue);
+        }
+      }
+
+      .main__pricing-plans-section__pricing-card__price {
+        color: map-get($colors, neutral, dark-navy-blue);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &__month {
+          font-size: 0.9rem;
+          color: map-get($colors, primary, leging-blue);
+          font-weight: map-get($font-weights, manrope, medium);
+        }
+      }
+
+      .main__pricing-plans-section__pricing-card__subscription-features {
+        &__feature {
+          &__description {
+            color: map-get($colors, neutral, dark-navy-blue);
+          }
+        }
+      }
+    }
+  }
+}

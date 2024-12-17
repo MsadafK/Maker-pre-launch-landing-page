@@ -1,0 +1,7 @@
+// BASE.SCSS
+
+body {
+  background-color: map-get($colors, neutral, dark-navy-blue);
+  position: relative;
+  overflow-x: hidden;
+}
